@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request Form</title>
+    
+    <style>
+		
+		body 
+		{
+		  background-color: #add8e6;
+		}
+		
+		h1 {
+		  text-align: center;
+		  border-bottom: 1px solid white;
+		}
+
+	</style>
+</head>
+<body>
+    <h1>Request Form</h1>
+    <form action="Display.java" method="post" >
+		
+		<!--Name-->
+        <label for="firstname">Firstame:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Firstname" required>
+        <label for="lastname">Lastname:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Lastname" required>
+        
+        <br>
+        <br>
+		
+		<!--Course-->
+		<label for="course">Course:</label>
+        <select id="course" name="course" >
+			<option value="" selected>Course</option>
+            <option value="software">Software Engineering</option>
+            <option value="data">Data Engineering</option>
+            <option value="bioinformatics">Bioinformatics</option>
+            <option value="network">Network and Security</option>
+            <option value="graphic">Graphics and Multimedia</option>
+        </select>
+        
+        <br>
+        <br>
+		
+		<!--Gender-->
+<label>Gender:</label><br>
+<input type="radio" id="male" name="gender" value="male" checked>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+        
+        <br>
+        <br>
+        
+        <!--Language-->
+		<label>Language:</label><br>
+        <input type="checkbox" id="english" name="english" value="english">
+        <label for="english">English</label><br>
+        <input type="checkbox" id="malay" name="malay" value="malay">
+        <label for="malay">Malay</label><br>
+        <input type="checkbox" id="mandarin" name="mandarin" value="mandarin">
+        <label for="mandarin">Mandarin</label>
+        
+        <br>
+        <br>
+
+	<!-- Transportation -->
+<label for="transportation">Transportation:</label> <br>
+<select id="transportation" name="transportation" size="5" multiple> <!-- Increase size to 5 to display multiple values -->
+ 
+    <option value="bus">Bus</option>
+    <option value="car">Car</option>
+    <option value="motor">Motorcycle</option>
+    <option value="bicycle">Bicycle</option>
+    <option value="walking">Walking</option>
+     <option value=""></option>
+    
+    
+</select>
+
+        
+        <br>
+        <br>
+		
+		<!--Phone Number-->
+        <label for="phone">Phone:</label>
+        <input type="phone" id="phone" name="phone" placeholder="Phone no." required>
+        
+        <br>
+        <br>
+		
+		<!--Address-->
+        <label for="address">Current Address:</label><br><br>
+        <textarea id="adddress" name="address" rows="8" cols="80" required></textarea>
+        
+        <br>
+        <br>
+		
+		<!--Email-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <br>
+        <br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html> 
